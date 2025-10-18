@@ -31,11 +31,7 @@
       gmail = {
         name = "Gmail";
         exec = ''${lib.getExe pkgs.firefox} "https://mail.google.com/"'';
-        icon =
-          (pkgs.fetchurl {
-            url = "https://www.svgrepo.com/download/452213/gmail.svg";
-            sha256 = "sha256-mDJqB47Gw3vWmxxeJCPY84FIpBx4IlbSgYr+B3t7P9U=";
-          }).outPath;
+        icon = ./icons/gmail.svg;
       };
 
       telegram = {
